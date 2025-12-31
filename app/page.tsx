@@ -22,7 +22,7 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 const supabase = createClient(supabaseUrl || '', supabaseKey || '')
-const BREAST_FEED_RATE = 10 
+const BREAST_FEED_RATE = 5 
 
 export default function BabyTracker() {
   const [mode, setMode] = useState('bottle')
